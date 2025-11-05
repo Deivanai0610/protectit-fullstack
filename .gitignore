@@ -1,4 +1,4 @@
-# Expo
+# Expo (React Native/Expo build artifacts and caches)
 web-build/
 .expo/
 .expo-shared/
@@ -7,10 +7,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Backend
+# Backend (Node.js/Express specific ignores)
 backend/node_modules/
 backend/.env
 
-# OS
+# OS-specific files (macOS, Windows)
 .DS_Store
 Thumbs.db

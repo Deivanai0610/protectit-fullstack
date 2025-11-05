@@ -1,20 +1,13 @@
-Protectit/                          # Root folder (create this)
-├── App.js                          # Main app entry (navigation)
-├── app.json                        # Expo configuration
-├── package.json                    # App dependencies and scripts
-├── .gitignore                      # Git ignore rules (optional, but recommended)
-├── assets/                         # Optional: For icons/splash (create if you want custom images)
-│   ├── icon.png               # App icon (download a shield/lock PNG from Flaticon.com, 1024x1024)
-│   ├── splash.png                  # Splash screen image (optional, 1242x2436 PNG)
-│   └── adaptive-icon.png           # Android adaptive icon (optional, 108x108 PNG)
-├── screens/                        # App screens (create this folder)
-│   ├── PhishingChecker.js          # Phishing link analysis screen
-│   ├── History.js                  # History of checks screen
-│   ├── Quiz.js                     # Phishing quiz screen
-│   └── PrivacySummarizer.js        # Privacy policy summary screen
-└── backend/                        # Backend for database (create this folder - separate from app)
-    ├── index.js                    # Express server
-    ├── db.js                       # Database connection
-    ├── package.json                # Backend dependencies
-    ├── .env                        # Secrets (DB URL - keep private!)
-    └── .gitignore                  # Backend git ignore
+> Why do I have a folder named ".expo" in my project?
+
+The ".expo" folder is created when an Expo project is started using "expo start" command.
+
+> What do the files contain?
+
+- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+- "settings.json": contains the server configuration that is used to serve the application manifest.
+
+> Should I commit the ".expo" folder?
+
+No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
